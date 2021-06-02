@@ -39,8 +39,8 @@
         </div>
         <form action="/MentoringProject/mentorMentoringCompleteTokenCheck.do" method="post">
           	<div class="form_field">
-                <input style="display: none" type="text" name="schedulepk" class="form__input" pattern=".{6,}" required value="<%out.print(request.getParameter("scheduledpk"));%>">
-                <input type="text" name="token" class="form__input" pattern=".{6,}" required placeholder="토큰번호는 6자리로 입력해주세요">
+                <input style="display: none" type="text" name="schedulepk" class="form__input" required value="<%out.print(request.getParameter("scheduledpk"));%>">
+                <input type="text" name="token" class="form__input" required placeholder="토큰번호는 6자리로 입력해주세요">
             </div>
             <div class="tokenbutton" align = "center">
                 <input type="submit" value="토큰 입력">

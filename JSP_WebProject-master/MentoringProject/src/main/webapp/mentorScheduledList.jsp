@@ -99,7 +99,7 @@
                                 <th>세부포스명</th>
                                 <th>가격</th>
                                 <th>예약 확정</th>
-                                <th>예약 취소</th>
+                                <th>예약 취소</th>  
 							</tr>
 						</thead>
 						<tbody>
@@ -111,7 +111,7 @@
 			                    <td>${dto.scheduledMajor }</td>
 			                    <td>${dto.scheduledSubMajor }</td>
                                 <td>${dto.scheduledPrice }</td>
-                                <td><a href="/MentoringProject/mentorScheduledCompleteList.do?paymentPk=${dto.paymentPk }" class="confirmationB" >예약 확정 하기</a></td>
+                                <td><a href="/MentoringProject/mentorScheduledCompleteList.do?paymentPk=${dto.paymentPk }" class="confirmationB" >확정 하기</a></td>
                                 <td><a href="/MentoringProject/mentorBookingCancel.do?paymentpk=${dto.paymentPk }" class="confirmationA">예약 취소</a></td>
 							</tr>		
 							</c:forEach>
