@@ -613,7 +613,7 @@ public class PaymentDao {
 							+ " inner join user as mentoruser on m.user_userpk = mentoruser.userpk\n"
 							+ " inner join submajor as sb on p.submajor_submajorpk = sb.submajorpk\n"
 							+ " inner join major as mj on sb.major_majorpk = mj.majorpk\n"
-							+ " where not py.paymenttoken is null and mentee.userpk = ?";
+							+ " where not py.paymenttoken is null and py.paymentsenddate is null and mentee.userpk = ?";
 					break;
 				case "cancel":
 					query="select mentoruser.username as mentorname, mj.majorname, sb.submajorname, s.startday, s.starttime, s.endtime, py.paymentpk, py.paymentcanceldate, py.paymenttoken, py.paymentpaydate\n"
@@ -635,7 +635,7 @@ public class PaymentDao {
 							+ " inner join user as mentoruser on m.user_userpk = mentoruser.userpk\n"
 							+ " inner join submajor as sb on p.submajor_submajorpk = sb.submajorpk\n"
 							+ " inner join major as mj on sb.major_majorpk = mj.majorpk\n"
-							+ " where py.paymentcanceldate is null and mentee.userpk = ?";
+							+ " where py.paymentcanceldate is null and py.paymentsenddate is null and mentee.userpk = ?";
 					break;
 					
 				default:

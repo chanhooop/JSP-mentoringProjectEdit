@@ -21,6 +21,15 @@
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/slick.min.js"></script>
 </head>
+<style>
+#majorIntro {max-width: 800px; margin: 0 auto;}
+#majorIntro col:nth-child(1) {width: 30%;}
+#majorIntro col:nth-child(2) {width: 70%; }
+#majorIntro tr th { text-align: right; padding: 10px 15px 10px 0; vertical-align: middle;}
+#majorIntro tr:nth-child(3) th {vertical-align: top;}
+#majorIntro tr td {padding: 10px 0 10px 15px;}
+#majorIntro tr td select, #majorIntro tr td input {height: 30px; width: 69.5%; border: 1px solid #ddd}
+</style>
 <body>
 
 <!-- 유저가 제다이 -->
@@ -89,8 +98,12 @@
 					<div class="container cf">
 							<input type="text" hidden="true" value="<% out.print(session.getAttribute("mentorPk")); %>" name="mentorpk">
 							<table id="majorIntro" >
+                                <colgroup>
+                                    <col>
+                                    <col>
+                                </colgroup>
 								<tr>
-									<td>세부 전공 : </td>
+									<th>세부 전공 </th>
 									<td>
 										<select name="submajorpk">
 										<%for(int i = 1; i < subMajorList.size() ; i++){ %>
@@ -100,18 +113,17 @@
 									</td>
 								</tr>
 								<tr>
-								<tr>
-									<td>타이틀</td>
+									<th>타이틀</th>
 									<td>
 										<input type="text" placeholder="자신을 나타내는 개성있는 제목!" name="title">
 									 </td>
 								</tr>
 								<tr>
-									<td>자기소개 : </td>
-									<td><textarea rows="10" cols="50" name="introduce">간단하게 입력하세요</textarea></td>
+									<th>자기소개</th>
+									<td><textarea rows="10" cols="50" name="introduce" placeholder="간단하게 입력하세요"></textarea></td>
 								</tr>
 								<tr>
-									<td> 1 시간 가격 : </td>
+									<th> 1 시간 가격</th>
 									<td><input type="text" size = "20" name="price" placeholder="1시간 멘토링 가격을 입력해 주세요!"></td>
 								</tr>
 							</table>

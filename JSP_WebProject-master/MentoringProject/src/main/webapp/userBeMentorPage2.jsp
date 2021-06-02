@@ -50,6 +50,15 @@
 	}
 
 </script>
+<style>
+.container {position: relative}
+#majorIntro {max-width: 800px; margin: 0 auto;}
+#majorIntro tr td select {height: 35px; width: 36%; position: absolute; background: #def3df;
+							top: 35%; left:15%; transform: translate(50%,-50%)}
+#majorIntro tr td input {height: 35px; width: 36%; position: absolute; border: 1px solid #eee;
+							top: 48%; left:15%; transform: translate(50%,-50%)}
+
+</style>
 <body>
 
 <!-- 유저가 제다이 -->
@@ -110,7 +119,7 @@
 				</div>
 				<form action="mentorProfileMajor.do" method="post">
 					<div class="container cf">
-							<table>
+							<table id="majorIntro">
 								<tr>
 									<td>
 										<select name="major" onchange="handleOnChange(this)">
