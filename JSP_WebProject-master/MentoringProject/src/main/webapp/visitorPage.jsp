@@ -165,7 +165,7 @@
                     </li>
                     <li>
                         <div class="imgbox">
-                            <img src="./img/banner02.jpg" alt="">
+                            <img src="./img/design.jpg" alt="">
                             <div class="sbox">
                                 <a href="/MentoringProject/HompageCategorySearch.do?majornum=2"><p>디자인</p></a>
                             </div>
@@ -179,7 +179,7 @@
                     </li>
                     <li>
                         <div class="imgbox">
-                            <img src="./img/banner03.jpg" alt="">
+                            <img src="./img/art.jpg" alt="">
                             <div class="sbox">
                                 <a href="/MentoringProject/HompageCategorySearch.do?majornum=3"><p>예술</p></a>
                             </div>
@@ -193,7 +193,7 @@
                     </li>
                     <li>
                         <div class="imgbox">
-                            <img src="./img/banner01.jpg" alt="">
+                            <img src="./img/health.jpg" alt="">
                             <div class="sbox">
                                 <a href="/MentoringProject/HompageCategorySearch.do?majornum=4"><p>운동</p></a>
                             </div>
@@ -222,71 +222,72 @@
         </article>
         <article id="article4">
         </article>
-        <article id="article5">
+                <article id="article5">
             <div class="row">
                 <div class="sec_title">마스터 프로필</div>
-                <div class="home__box">
-                    <c:forEach items="${mentorProfile1 }" var="mentorProfile1">
-                        <div class="home">
-                            <div class="home__img1"><img src="${mentorProfile1.mentorImage }" alt="mentorImage"></div>
-                            <div class="home__info">
-                                <div class="info1">${mentorProfile1.mentorMajor }</div>
-                                <div class="info2">${mentorProfile1.mentorTitle }</div>
-                                <div class="info3">
-                                    <span class="star">${mentorProfile1.mentorSubMajor }</span>
-                                    <span class="count">${mentorProfile1.productPk }</span>
-                                    <span class="type">${mentorProfile1.mentorName }</span>
-                                </div>
-                            </div>
-                        </div>
-                    </c:forEach>
-                    <c:forEach items="${mentorProfile2 }" var="mentorProfile2">
-                        <div class="home">
-                            <div class="home__img2"><img src="${mentorProfile2.mentorImage }" alt="mentorImage"></div>
-                            <div class="home__info">
-                                <div class="info1">${mentorProfile2.mentorMajor }</div>
-                                <div class="info2">${mentorProfile2.mentorTitle }</div>
-                                <div class="info3">
-                                    <span class="star">${mentorProfile2.mentorSubMajor }</span>
-                                    <span class="count">${mentorProfile2.productPk }</span>
-                                    <span class="type">${mentorProfile2.mentorName }</span>
-                                </div>
-                            </div>
-                        </div>
-                    </c:forEach>
-    
-                    <c:forEach items="${mentorProfile3 }" var="mentorProfile3">
-                        <div class="home">
-                            <div class="home__img3"><img src="${mentorProfile3.mentorImage }" alt="mentorImage"></div>
-                            <div class="home__info">
-                                <div class="info1">${mentorProfile3.mentorMajor }</div>
-                                <div class="info2">${mentorProfile3.mentorTitle }</div>
-                                <div class="info3">
-                                    <span class="star">${mentorProfile3.mentorSubMajor }</span>
-                                    <span class="count">${mentorProfile3.productPk }</span>
-                                    <span class="type">${mentorProfile3.mentorName }</span>
-                                </div>
-                            </div>
-                        </div>
-                    </c:forEach>
-    
-                    <c:forEach items="${mentorProfile4 }" var="mentorProfile4">
-                        <div class="home">
-                            <div class="home__img4"><img src="${mentorProfile4.mentorImage }" alt="mentorImage"></div>
-                            <div class="home__info">
-                                <div class="info1">${mentorProfile4.mentorMajor }</div>
-                                <div class="info2">${mentorProfile4.mentorTitle }</div>
-                                <div class="info3">
-                                    <span class="star">${mentorProfile4.mentorSubMajor }</span>
-                                    <span class="count">${mentorProfile4.productPk }</span>
-                                    <span class="type">${mentorProfile4.mentorName }</span>
-                                </div>
-                            </div>
-                        </div>
-                    </c:forEach>
+                <div class="home_container">
+                    <div class="home_box">
+                        <ul>
+                            <li><img src="./img/kangjiyouel.jpg" alt="">
+                                <ul class="home_txt">
+                                    <li>소프트웨어개발</li>
+                                    <li>JAVA</li>
+                                    <li>JAVA</li>
+                                    <li>강지율</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="home_box">
+                        <ul>
+                            <li><img src="./img/kangseowoo.jpg" alt="">
+                                <ul class="home_txt">
+                                    <li>소프트웨어개발</li>
+                                    <li>HTML</li>
+                                    <li>HTML</li>
+                                    <li>강서우</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="home_box">
+                        <ul>
+                            <li><img src="./img/kangminhyeuk.jpg" alt="">
+                                <ul class="home_txt">
+                                    <li>소프트웨어개발</li>
+                                    <li>Python</li>
+                                    <li>Python</li>
+                                    <li>강민혁</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="home_box">
+                        <ul>
+                            <li><img src="./img/kanggeumin.jpg" alt="">
+                                <ul class="home_txt">
+                                    <li>소프트웨어개발</li>
+                                    <li>MYSql</li>
+                                    <li>MYSql</li>
+                                    <li>강규민</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="home_box">
+                        <ul>
+                            <li><img src="img/kangseongjun.jpg" alt="">
+                                <ul class="home_txt">
+                                    <li>소프트웨어개발</li>
+                                    <li>C</li>
+                                    <li>C</li>
+                                    <li>강성준</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </article>
+        
     </section>
     <footer id="footer">
         <div class="row">

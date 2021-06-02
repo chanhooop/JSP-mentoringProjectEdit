@@ -147,7 +147,7 @@ text-align:center;
 	<!-- 디자인 들어간 부분 끝-->
 
 
-	<footer id="footer">
+	 <footer id="footer">
         <div class="row">
             <p>
                 <a href="#none">회사소개</a>

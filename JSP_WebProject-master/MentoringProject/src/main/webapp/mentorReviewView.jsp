@@ -70,7 +70,7 @@ text-align:center;
     	<section>
 		<article class="subpage">
 			<div class="row">
-				<div class="mentorpaylist">
+				<div class="mentorreviewview">
 				<div class="MenteeMentoringListNav">      
 					<h2>리뷰 보기 페이지</h2>
 					<div class="MenteeMentoringListNav subTitle">

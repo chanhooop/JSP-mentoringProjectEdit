@@ -639,34 +639,6 @@ table {
 
 
 
-
-/* ----------------------�넗�겙踰덊샇�엯�젰---------------------------------------------- */
-helpers/alignment.css
-.align { align-items: center; display: flex;flex-direction: column; justify-content: center;}
-     helpers/icon.css
-     .icon { font-size: 2rem;}
-     layout/base.css
-     html { height: 100%;}
-     
-     modules/headline.css
-     h3 {font-size: 27px; color: #111; margin-bottom: 1.5em;}
-     modules/paragraph.css
-     p {margin-bottom: 1.5em; margin-top: 1.5em;}
-     modules/form.css
-     input {font: inherit;outline: 0;}
-     .form__field {position: relative; }
-     .form__field .icon { position: absolute;  right: 1em; top: 50%; transform: translateY(-50%)}
-     .form__input { border-radius: 0.25em; border-style: solid; border-width: 2px;font-size: 1.5rem; padding: 0.5em 4em 0.5em 2em; }
-     .form__input:valid { border-color: forestgreen;}
-     .form__input:valid + .icon::after {content: '�윑�';} 
-     .form__input:invalid { border-color: firebrick;}
-     .form__input:invalid + .icon::after { content: '�윑�';}
-     .tokenbutton input{background: #055705; color: #fff;
-       width: 70px; height: 45px; font-size: 15px;
-       font-weight: 700; border-radius: 6px;
-       border: 0; cursor: pointer; transition: all 0.5s ; margin-top: 20px; margin-bottom: 20px;}
-/*      ----------------------�넗�겙踰덊샇�엯�젰---------------------------------------------- */
-
 /* 
 =========Calendar Design======== */
 
@@ -854,3 +826,30 @@ input[type="password"] {
 /* 
 
 =================calendar end================  */
+
+
+
+
+/* mentorpaylist */
+.mentorpaylist h2 {font-size: 23px; font-weight: 700; padding-bottom: 20px; padding-left: 30px;}
+.mentorpaylist h4 {font-size: 15px; font-weight: 1000; padding-bottom: 20px; padding-left: 15px;}
+.mentorpaylist .info ul {float: right;}
+.mentorpaylist .info ul li {display: inline-block; padding: 0 10px; margin: 20px 0;}
+.mentorpaylist table {margin: 0 auto; text-align: center;}
+.mentorpaylist table tr th {padding: 13px; background: #a3cf77; font-size: 17px; font-weight: 700;
+                            border-bottom: 4px double #478b02;}
+.mentorpaylist table tr td {padding: 10px; border-bottom: 1px solid #eee; font-size: 15px;}
+.mentorpaylist table col:nth-of-type(1) {width: 80px;}
+.mentorpaylist table col:nth-of-type(2) {width: 100px;}
+.mentorpaylist table col:nth-of-type(3) {width: 130px;}
+.mentorpaylist table col:nth-of-type(4) {width: 100px;}
+.mentorpaylist table col:nth-of-type(5) {width: 130px;}
+.mentorpaylist table tr td > a {padding: 5px 13px; background: #79c231; border-radius: 5px;
+                                transition: all 0.5s;}
+.mentorpaylist table tr td > a:hover {color: #fff; background: #478b02; }
+.mentorpaylist {margin: 100px 0 ;display: flex; justify-content: space-around;}
+
+
+
+
+
